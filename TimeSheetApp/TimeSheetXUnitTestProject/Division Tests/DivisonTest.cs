@@ -5,9 +5,11 @@ using TimeSheetApp.Models;
 using TimeSheetApp.Data;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Xunit;
 
 namespace TimeSheetXUnitTestProject.Division_Tests
 {
+    [Collection("TimeSheetApp.Data")]
     class DivisonTest : IDisposable
     {
         private readonly ApplicationDbContext _db;
@@ -22,13 +24,6 @@ namespace TimeSheetXUnitTestProject.Division_Tests
             //_db.Dispose();
         }
         
-        public void CreateDivision()
-        {
-            Division sales = new Division();
-
-            sales.Name = "Sales";
-
-            
-        }
+        
     }
 }
