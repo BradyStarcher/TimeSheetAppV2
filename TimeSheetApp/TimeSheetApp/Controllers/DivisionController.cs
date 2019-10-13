@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using TimeSheetApp.Data;
 using TimeSheetApp.Models;
+using TimeSheetApp.Service;
 
 namespace TimeSheetApp.Controllers
 {

@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TimeSheetApp.Models;
 
 namespace TimeSheetApp.Service
 {
-    public class TimeSheetService : ITimeSheetService
+    public interface IDivisionService
     {
-
+        Division GetById(int id);
     }
 }
