@@ -21,7 +21,14 @@ namespace TimeSheetXUnitTestProject.Division_Tests
         {
             //_db.Dispose();
         }
+        
+        public void CreateDivision()
+        {
+            Division sales = new Division();
 
+            sales.Name = "Sales";
 
+            
+        }
     }
 }
