@@ -14,6 +14,10 @@ namespace TimeSheetApp.Data
         {
         }
 
+        public ApplicationDbContext()
+        {
+        }
+
         private string connectionString = @"Server=localhost\SQLEXPRESS;database=TimeSheetApp;MultipleActiveResultSets=true;Trusted_Connection=True;";
 
         public DbSet<TimeSheetApp.Models.Division> Division { get; set; }
