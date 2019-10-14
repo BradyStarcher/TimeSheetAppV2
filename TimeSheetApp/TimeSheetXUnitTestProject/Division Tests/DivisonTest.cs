@@ -32,15 +32,15 @@ namespace TimeSheetXUnitTestProject.Division_Tests
             var create = _controller.Create(testDivision);
         }
 
-        [Fact]
-        public void Test()
-        {
-            Assert.Equal(15, Add(5, 10));
-        }
+        //[Fact]
+        //public void Test()
+        //{
+        //    Assert.Equal(15, Add(5, 10));
+        //}
 
-        int Add(int x, int y)
-        {
-            return x + y;
-        }
+        //int Add(int x, int y)
+        //{
+        //    return x + y;
+        //}
     }
 }
