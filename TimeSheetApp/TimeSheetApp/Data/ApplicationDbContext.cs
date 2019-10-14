@@ -7,16 +7,15 @@ using TimeSheetApp.Models;
 
 namespace TimeSheetApp.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<User, Role, string>
     {
-        public ApplicationDbContext()
-        {
-        }
-
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
+
+        private string connectionString = @"Server=localhost\SQLEXPRESS;database=TimeSheetApp;MultipleActiveResultSets=true;Trusted_Connection=True;";
+
         public DbSet<TimeSheetApp.Models.Division> Division { get; set; }
         public DbSet<TimeSheetApp.Models.Payroll> Payroll { get; set; }
         public DbSet<TimeSheetApp.Models.TimeClock> TimeClock { get; set; }

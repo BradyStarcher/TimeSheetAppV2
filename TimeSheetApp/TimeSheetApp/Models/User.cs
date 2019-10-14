@@ -13,6 +13,10 @@ namespace TimeSheetApp.Models
 
         }
 
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
         public Division DivisionID { get; set; }
     }
 }
