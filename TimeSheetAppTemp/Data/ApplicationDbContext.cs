@@ -13,5 +13,8 @@ namespace TimeSheetAppTemp.Data
             : base(options)
         {
         }
+        public DbSet<TimeSheetAppTemp.Models.Division> Division { get; set; }
+        public DbSet<TimeSheetAppTemp.Models.Payroll> Payroll { get; set; }
+        public DbSet<TimeSheetAppTemp.Models.TimeClock> TimeClock { get; set; }
     }
 }
