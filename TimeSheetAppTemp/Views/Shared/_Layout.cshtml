@@ -34,9 +34,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        @if (SignInManager.IsSignedIn(User))
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin") || SignInManager.IsSignedIn(User) && User.IsInRole("HR")
+                           || SignInManager.IsSignedIn(User) && User.IsInRole("Manager"))
                         {
                             <li><a class="nav-link text-dark" asp-area="" asp-controller="Division" asp-action="Index">View Divisions</a></li>
+                            <li><a class="nav-link text-dark" asp-area="" asp-controller="Payroll" asp-action="Index">View Payroll</a></li>
+                            <li><a class="nav-link text-dark" asp-area="" asp-controller="TimeClock" asp-action="Index">Clock In/Out</a></li>
+                        }
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Employee"))
+                        {
                             <li><a class="nav-link text-dark" asp-area="" asp-controller="Payroll" asp-action="Index">View Payroll</a></li>
                             <li><a class="nav-link text-dark" asp-area="" asp-controller="TimeClock" asp-action="Index">Clock In/Out</a></li>
                         }
