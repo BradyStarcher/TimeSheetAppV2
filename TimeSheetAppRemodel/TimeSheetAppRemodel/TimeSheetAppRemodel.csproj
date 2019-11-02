@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <Folder Include="EF\Migrations\" />
-    <Folder Include="Repos\Base\" />
     <Folder Include="Repos\Interfaces\" />
   </ItemGroup>
 
