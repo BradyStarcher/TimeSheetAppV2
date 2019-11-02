@@ -9,4 +9,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Entities\Base\" />
+    <Folder Include="ViewModels\Base\" />
+  </ItemGroup>
+
 </Project>

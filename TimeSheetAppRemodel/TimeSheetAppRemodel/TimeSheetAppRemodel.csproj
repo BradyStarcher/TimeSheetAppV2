@@ -22,4 +22,11 @@
     <ProjectReference Include="..\TimeSheet.Models\TimeSheet.Models.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EF\Migrations\" />
+    <Folder Include="Initializers\" />
+    <Folder Include="Repos\Base\" />
+    <Folder Include="Repos\Interfaces\" />
+  </ItemGroup>
+
 </Project>
