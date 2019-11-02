@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Entities\Base\" />
     <Folder Include="ViewModels\Base\" />
   </ItemGroup>
 
